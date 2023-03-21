@@ -4,16 +4,16 @@ type ChallengeProps = {
   title: string;
   
 }
-export class Correction extends Entity<ChallengeProps>{
+export class Challenge extends Entity<ChallengeProps>{
   private constructor(props: ChallengeProps, id?: string){
     super(props, id);// metodo do entity
   }
   // se tiver que fazer validação, faz dentro do create
   // static pra ser chamado sem instanciar
   static create(props: ChallengeProps, id?: string){  // metodo public, lugar do construct
-    const correction = new Correction(props);
+    const challenge = new Challenge(props);
 
-    return correction;
+    return challenge;
   }
 
 }
